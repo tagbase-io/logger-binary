@@ -6,12 +6,6 @@ defmodule LoggerBinary do
   non-printable binary data into a hexadecimal string representation and can
   optionally add a directional indicator (`"< "` or `"> "`) when needed.
 
-  ## Usage
-
-      config :logger, :console,
-        format: {LoggerBinary.Formatter, :format},
-        metadata: [:direction]
-
   ## Features
 
     * Formats binary messages as uppercase hexadecimal strings.

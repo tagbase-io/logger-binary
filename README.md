@@ -1,4 +1,4 @@
-# LoggerBinary
+# LoggerBinary [![CI](https://github.com/tagbase-io/logger-binary/actions/workflows/test.yml/badge.svg)](https://github.com/tagbase-io/logger-binary/actions/workflows/test.yml)
 
 A custom `Logger` formatter for handling binary data.
 

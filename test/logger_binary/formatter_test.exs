@@ -1,8 +1,9 @@
 defmodule LoggerBinary.FormatterTest do
   use ExUnit.Case, async: true
 
-  require Logger
   import ExUnit.CaptureLog
+
+  require Logger
 
   test "formats binary data" do
     assert capture_log(fn ->

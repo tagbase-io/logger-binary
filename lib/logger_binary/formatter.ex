@@ -1,9 +1,7 @@
 defmodule LoggerBinary.Formatter do
   @moduledoc false
 
-  @default_format Logger.Formatter.compile(
-                    Application.compile_env(:logger, [__MODULE__, :format], "[$level] $message\n")
-                  )
+  @default_format Logger.Formatter.compile(Application.compile_env(:logger, [__MODULE__, :format], "[$level] $message\n"))
 
   def format(level, message, timestamp, metadata) when is_binary(message) do
     message =

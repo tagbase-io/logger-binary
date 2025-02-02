@@ -7,8 +7,19 @@ defmodule LoggerBinary.MixProject do
       version: "0.1.0",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      description: "A custom Logger formatter for handling binary data.",
+      package: package(),
+      docs: docs()
     ]
+  end
+
+  defp package do
+    [licenses: ["MIT"], links: %{"GitHub" => "https://github.com/tagbase-io/logger-binary"}]
+  end
+
+  defp docs do
+    [main: "LoggerBinary"]
   end
 
   # Run "mix help compile.app" to learn about applications.

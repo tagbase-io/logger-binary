@@ -5,7 +5,7 @@ defmodule LoggerBinary.MixProject do
     [
       app: :logger_binary,
       version: "0.1.0",
-      elixir: "~> 1.12",
+      elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: "A custom Logger formatter for handling binary data.",
